@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eaf3ff, #f7fbff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 15px;
+}
+
+/* CARD CONTAINER */
+.container {
+  background: white;
+  width: 85%;
+  max-width: 420px;
+
+  padding: 25px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  border-top: 5px solid #1e88e5;
+}
+
+/* TITLE */
+#question {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #1e88e5;
+  font-weight: bold;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border-radius: 10px;
+  border: 1px solid #cfe3ff;
+
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 5px rgba(30, 136, 229, 0.3);
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+
+  background: #1e88e5;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+#bookingForm {
+  max-width: 320px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#bookingForm input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cfe3ff;
+}
+
+#bookingForm button {
+  background: #1e88e5;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Dialog */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 280px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 360px) {
+  .container {
+    padding: 18px;
+  }
+
+  #question {
+    font-size: 16px;
+  }
+}
